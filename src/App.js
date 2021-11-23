@@ -42,7 +42,9 @@ function App() {
           value={formik.values.email}
           onChange={formik.handleChange}
         />
-        <Button variant="outlined">Submit</Button>
+        <Button type="submit" variant="outlined">
+          Submit
+        </Button>
       </form>
     </div>
   );
