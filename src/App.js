@@ -37,6 +37,7 @@ function App() {
           onChange={formik.handleChange}
           error={formik.touched.firstName && Boolean(formik.errors.firstName)}
           helperText={formik.touched.firstName && formik.errors.firstName}
+          onBlur={formik.handleBlur}
         />
         <TextField
           id="lastName"
@@ -47,6 +48,7 @@ function App() {
           onChange={formik.handleChange}
           error={formik.touched.lastName && Boolean(formik.errors.lastName)}
           helperText={formik.touched.lastName && formik.errors.lastName}
+          onBlur={formik.handleBlur}
         />
         <TextField
           id="email"
@@ -57,6 +59,7 @@ function App() {
           onChange={formik.handleChange}
           error={formik.touched.email && Boolean(formik.errors.email)}
           helperText={formik.touched.email && formik.errors.email}
+          onBlur={formik.handleBlur}
         />
         <Button type="submit" variant="outlined">
           Submit
